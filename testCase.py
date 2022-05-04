@@ -1,5 +1,5 @@
 from main import Student, Specialization, Subject, Group, Exam, ExamPoints
-from classes.getSubject import getSubject
+#from classes.getSubject import getSubject
 from datetime import date
 import unittest
 
