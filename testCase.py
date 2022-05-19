@@ -38,11 +38,5 @@ class TestClasses(unittest.TestCase):
         self.assertEqual(2021, exam.year)
         self.assertEqual("Эверстов Владимир Васильевич", exam.lecturer_fio)
 
-    def test_class_exampoints(self):
-        exampoints = ExamPoints(Student, 59.9, 30)
-        self.assertEqual(Student, exampoints.student)
-        self.assertEqual(59.9, exampoints.inPoints)
-        self.assertEqual(30, exampoints.examPoints)
-
 if __name__ == '__main__':
     unittest.main()
