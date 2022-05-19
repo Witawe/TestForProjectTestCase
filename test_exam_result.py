@@ -81,7 +81,7 @@ class TestGetExamResult(unittest.TestCase):
         ep = ExamPoints(self.student, 55.4, 30.0, self.data , self.group.name, self.subject)
         inst = Institute()
         inst.add_exam_points(ep)
-        self.assertEqual(len(inst.get_exam_points(self.group.name,self.subject.name,self.d)), 1)
+        self.assertEqual(len(inst.get_exam_points(self.group.name,self.subject.name,self.data)), 1)
 
     def test_2(self):
         inst = Institute()
