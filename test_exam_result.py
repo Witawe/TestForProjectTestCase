@@ -78,7 +78,7 @@ class TestGetExamResult(unittest.TestCase):
     data = date(2021, 1, 10)
 
     def test_1(self):  # Корректный тест
-        ep = ExamPoints(self.student, 55.4, 30.0, self.d, self.group.name, self.subject)
+        ep = ExamPoints(self.student, 55.4, 30.0, self.data , self.group.name, self.subject)
         inst = Institute()
         inst.add_exam_points(ep)
         self.assertEqual(len(inst.get_exam_points(self.group.name,self.subject.name,self.d)), 1)
